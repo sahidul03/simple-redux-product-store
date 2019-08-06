@@ -95,8 +95,8 @@ const productStoreApp = (state = initialState, action) => {
                     {
                         id: new Date().valueOf(),
                         name: action.payload.name,
-                        price: action.payload.price,
-                        discount: action.payload.discount
+                        price: action.payload.price ? parseInt(action.payload.price) : 0,
+                        discount: action.payload.discount ? parseInt(action.payload.discount) : 0
                     }
                 ]
             })

@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import ProductList from './components/ProductList'
 import CardItemList from './components/CardItemList'
@@ -11,12 +10,12 @@ function App() {
       <div className="row">
         <div className="col-md-8">
           <ProductList/>
+          <AddProduct/>
         </div>
         <div className="col-md-4">
           <CardItemList/>
         </div>
       </div>
-      <AddProduct/>
     </div>
   );
 }

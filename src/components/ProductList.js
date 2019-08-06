@@ -4,14 +4,16 @@ import { connect } from 'react-redux'
 import { addToCard } from '../actions/productActions'
 
 const ProductList = ({ products, addToCard }) => (
-  <div className="card-deck">
+  <div className="row">
     {products.map(product => (
-      <div key={ product.id } className="card border-primary mb-3">
-        <div className="card-header">{ product.name }</div>
-        <div className="card-body text-primary">
-          <p className="card-text">Price: { product.price }Tk</p>
-          <p className="card-text">Discount: { product.discount }Tk</p>
-          <button className="btn btn-success" onClick={() => addToCard(product)}>Add to Card</button>
+      <div className="col-3" key={ product.id }>
+        <div className="card border-primary mb-3">
+          <div className="card-header">{ product.name }</div>
+          <div className="card-body text-primary">
+            <p className="card-text">Price: { product.price }Tk</p>
+            <p className="card-text">Discount: { product.discount }Tk</p>
+            <button className="btn btn-success" onClick={() => addToCard(product)}>Add to Card</button>
+          </div>
         </div>
       </div>
     ))}
