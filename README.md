@@ -1,5 +1,5 @@
 ## About this project
-This project is basically for learning redux. By this repository you can learn, how redux works and how to integrate redux to react application. It is very simple project. Here I've added product to products store(redux store) and add product to card for shopping. I've done oly a few things. you can learn it very easily.
+This project is basically for learning redux. By this repository you can learn, how redux works and how to integrate redux to react application. It is very simple project. Here I've added product to products store(redux store) and add product to card store for shopping. I've done only a few things. I kept actions and reducers seperately for better understand. you can learn it very easily.
 
 To run the project please execute below commands in project directory - 
 ### `npm install`
